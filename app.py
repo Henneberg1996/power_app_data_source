@@ -1,4 +1,6 @@
 from flask import Flask, jsonify
+import inspect
+from invoke import task
 
 data = [
     {
@@ -49,8 +51,13 @@ data = [
     }
 ]
 
-app = Flask(__name__)
 
+if not hasattr(inspect, 'getargspec'):
+    inspect.getargspec = inspect.getfullargspec
+
+
+app = Flask(__name__)
+@task
 @app.route('/', methods=['GET'])
 def hello_world():
     return jsonify(data)
