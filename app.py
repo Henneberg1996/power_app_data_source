@@ -52,12 +52,13 @@ data = [
 ]
 
 
+# Fix the inspect.getargspec deprecation warning
 if not hasattr(inspect, 'getargspec'):
     inspect.getargspec = inspect.getfullargspec
 
-
 app = Flask(__name__)
-@task
+
+# Define a route for the root URL ('/') and specify the allowed methods
 @app.route('/', methods=['GET'])
 def hello_world():
     return jsonify(data)
