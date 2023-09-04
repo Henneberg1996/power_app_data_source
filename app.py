@@ -16,6 +16,17 @@ data = [
         "cargo_capacity": "4",
         "consumables": "1 day",
         "vehicle_class": "speeder",
+        "sales_lines": {
+            {
+             "Line_Object_No": "1000",
+             "Line_Type": "Item",
+             "Quantity": "1000"},
+            {
+             "Line_Object_No": "1000",
+             "Line_Type": "Item",
+             "Quantity": "1000"
+             }
+        },
         "pilots": [
             "https://swapi.dev/api/people/1/",
             "https://swapi.dev/api/people/5/"
@@ -40,6 +51,17 @@ data = [
         "cargo_capacity": "4",
         "consumables": "1 day",
         "vehicle_class": "speeder",
+        "sales_lines": {
+            {
+                "Line_Object_No": "1000",
+                "Line_Type": "Item",
+                "Quantity": "1000"},
+            {
+                "Line_Object_No": "1000",
+                "Line_Type": "Item",
+                "Quantity": "1000"
+            }
+        },
         "pilots": [
             "https://swapi.dev/api/people/1/",
             "https://swapi.dev/api/people/5/"
