@@ -4,6 +4,7 @@ from invoke import task
 
 data = [
     {
+        "customer_no": "10000",
         "name": "Imperial Speeder Bike",
         "model": "74-Z speeder bike",
         "manufacturer": "Aratech Repulsor Company",
@@ -27,6 +28,7 @@ data = [
         "url": "https://swapi.dev/api/vehicles/30/"
     },
     {
+        "customer_no": "10000",
         "name": "Imperial Speeder Bike",
         "model": "74-Z speeder bike",
         "manufacturer": "Aratech Repulsor Company",
